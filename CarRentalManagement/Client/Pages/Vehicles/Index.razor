@@ -1,9 +1,17 @@
-﻿@page "/Vehicles/"
+﻿@page "/vehicles/"
 @inject HttpClient _client
 @inject IJSRuntime js
 @attribute [Authorize]
 
 <h3 class="card-title">Car Vehicles</h3>
+<br />
+
+<a href="/vehicles/create" class="btn btn-secondary">
+ <span class="oi oi-plus"></span>
+ Create New Vehicle
+</a>
+<br />
+<br />
 
 @if (Vehicles == null)
 {
